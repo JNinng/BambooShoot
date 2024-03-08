@@ -1,0 +1,24 @@
+# 代理客户端配置
+
+# 客户端地址
+localhost: 127.0.0.1
+# 客户端端口
+port: 8081
+# 客户端密钥
+auth-key: client-key
+
+# 服务端地址
+server-host: 127.0.0.1
+# 服务端端口
+server-port: 14444
+
+# 端口映射
+port-mapping:
+  # client-port：代理客户端实际使用端口
+  # server-port：代理服务器外部访问端口
+  # proxy-type： 采用的代理模式
+  # description：代理描述
+  - client-port: 8080
+    server-port: 9980
+    proxy-type: tcp
+    description: http代理
